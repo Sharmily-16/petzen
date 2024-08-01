@@ -1,0 +1,570 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container  {
+    width: 90%;
+    margin: 0 auto; 
+	max-width: 1340px;
+}
+header {
+    overflow: hidden;
+    background: #FFFFFF;
+}
+.navber-area {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 20px 0;
+    
+}
+.brand h2 {
+    font-size: 3.75rem;
+    font-family: "Paytone One", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.brand h2 span {
+    color: #FBBC05;
+
+}
+nav ul {
+    padding: 0;
+    margin :0;
+    float: left;
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 40px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #323232;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: #FBBC05;
+}
+button {
+    margin-top: 20px;
+    float: right;
+}
+ button {
+    padding: 20px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    background: #FBBC05;
+    transition: 0.20s;
+} 
+button:hover {
+    border: 1px solid #FBBC05;
+    background: #FFFFFF;
+    color: #FBBC05;
+}
+.nav-mobile {
+     display: none;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: transparent;
+     height: 55px;
+     width: 70px;
+}
+ #navbar-toggle {
+     position: absolute;
+     left: 18px;
+     top: 15px;
+     cursor: pointer;
+     padding: 10px 35px 16px 0px;
+}
+ #navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+     cursor: pointer;
+     border-radius: 1px;
+     height: 3px;
+     width: 30px;
+     background: #000000;
+     position: absolute;
+     display: block;
+     content: '';
+     transition: all 300ms ease-in-out;
+}
+ #navbar-toggle span:before {
+     top: -10px;
+}
+ #navbar-toggle span:after {
+     bottom: -10px;
+}
+ #navbar-toggle.active span {
+     background-color: transparent;
+}
+ #navbar-toggle.active span:before, #navbar-toggle.active span:after {
+     top: 0;
+}
+ #navbar-toggle.active span:before {
+     transform: rotate(45deg);
+}
+ #navbar-toggle.active span:after {
+     transform: rotate(-45deg);
+}
+ 
+.hero-text {
+    float: left;
+    width: 50%;
+}
+.hero-img {
+    overflow: hidden;
+    width: 50%;
+}
+.hero-text h1 {
+    font-family: "Alata", sans-serif;
+    font-size: 3.8rem;
+}
+.hero-text h1 span {
+    color: #FBBC05;
+}
+.hero-text p {
+    color: #323232;
+    font-size: 21px;
+    font-family: "Open Sans", sans-serif;
+    margin: 38px 0;
+}
+.hero-text a {
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    background: #FBBC05;
+    transition: 0.20s;
+    padding: 20px 99px;
+}
+.hero-text a:hover {
+    border: 1px solid #FBBC05;
+    background: #FFFFFF;
+    color: #FBBC05;
+}
+/*****************************merece-area*******************************/
+.merece-area {
+    overflow: hidden;
+    padding: 20px 0;
+    background: #FFFFFF;
+    text-align: center;
+}
+.merece-area h2 {
+    font-size: 2.25rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+.col-2 {
+    width: 31.33%;
+    float: left;
+    overflow: hidden;
+    margin: 2% 1%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.merece-item {
+    padding: 24px 32px;
+    border-radius: 4px;
+  }
+.col-2 img {
+    background: rgb(241, 213, 128);
+    padding: 7px;
+    border-radius: 15px 0 ;
+  }
+.col-2 h4 {
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+}
+.col-2 p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+/****************************conectados-area********************************/
+.conectados-area {
+    overflow: hidden;
+    color: #FFFFFF;
+    padding: 45px 0;
+}
+.conectados {
+    background: #EDE8E8;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.conectados h2 {
+    color: #000000;
+    font-size: 1.8rem;
+    font-family: "Open Sans", sans-serif;
+}
+.conectados p {
+    font-size: 20px;
+    padding: 22px 0;
+}
+/***********************************app-area********************************/
+.app-area {
+    overflow: hidden;
+}
+.app-area h2 {
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+}
+.app-img {
+    width: 50%;
+    float: left;
+}
+.app-text {
+    width: 50%;
+    overflow: hidden;
+}
+.app-text ul {
+    margin: 0;
+    padding: 0;
+}
+.app-text ul li {
+    list-style: none;
+    display: inline-block;
+}
+.app-text ul li a {
+    text-decoration: none;
+}
+.app-text ul li a img {
+    overflow: hidden;
+}
+.app-text ul li a span {
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+}
+.app-item {
+    margin-top: 15px;
+}
+.app-text p {
+    font-size: 18px;
+    color: #323232;
+}
+.app-text  button {
+    padding: 10px 30px;
+}
+.app-text  button i {
+    font-size: 20px;
+}
+/*********************************customer-area***********************************/
+.customer-area {
+    overflow: hidden;
+}
+.customer-area h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 42px;
+    
+}
+.customer-area h2 a{
+    text-decoration: none;
+    font-family: "Paytone One", sans-serif;
+    color: #000000;
+}
+.customer-area h2 a span {
+    color:#FBBC05;
+}
+.col-3 {
+    width: 31.33%;
+    float: left;
+    overflow: hidden;
+    margin: 2% 1%;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.cutom-item {
+    padding: 20px 40px;
+}
+
+.cutom-item  ul {
+    margin: 0;
+    padding: 0;
+}
+.cutom-item  ul li {
+    list-style: none;
+    display: inline-block;
+}
+.cutom-item  ul li a {
+    text-decoration: none;
+    color: #323232;
+}
+.cutom-item  ul li a span {
+    font-size: 20px;
+}
+.cutom-item  ul li a p{
+    font-size: 18px;
+}
+hr {
+    color: #323232;
+}
+/******************************************nossas-area***********************************************/
+.nossas-area {
+    padding: 38px 0;
+    overflow: hidden;
+}
+.nossas-text {
+    width: 60%;
+    float: left;
+}
+.nossas-img {
+    width: 40%;
+    overflow: hidden;
+}
+.nossas-text h2{
+    font-size: 2.8rem;
+    font-family: "Open Sans", sans-serif;
+}
+.nossas-text p {
+    font-size: 18px;
+    color: #323232;
+    margin: 40px 0;
+}
+.nossas-text ul {
+    padding: 0;
+    margin: 0;
+}
+.nossas-text ul li {
+    list-style: none;
+    margin: 30px 0;
+    font-size: 18px;
+}
+.nossas-text ul li span {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    background: #f7edc8;
+}
+.content {
+    width: 360px;
+    height: 40px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+    border-radius: 60px;
+    overflow: hidden;
+  }
+  
+.subscription {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+.subscription .add-email{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+  }
+.subscription .submit-email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 2px);
+    width: 50px;
+    border: none;
+    border-radius: 60px;
+    outline: none;
+    margin: 1px;
+    padding: 0 10px;
+    cursor: pointer;
+    background: #FBBC05;
+    color: #FFFFFF;
+    transition: width .35s ease-in-out;
+    background: width .35s ease-in-out;
+  }
+  
+.subscription.done .submit-email {
+    width: calc(100% - 2px);
+    background: #C0E02E;
+  }
+.subscription .submit-email i {
+    font-size: 35px;
+}
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 38px;
+    transition: visibility .35s ease-in-out;
+    opacity: .35s ease-in-out;
+  }
+  
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+    visibility: hidden;
+    opacity: 0;
+  }
+.subscription .submit-email .after-submit {
+    transition-delay: .35s;
+  }
+  
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+    visibility: visible;
+    opacity: 1;
+  }
+  /*****************************************footer-area********************/
+  .footer-area {
+    overflow: hidden;
+  }
+  .footer {
+    background: #EDE8E8;
+    padding: 0 20px;
+  }
+  .navber {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.navber h2 {
+    font-size: 3.25rem;
+    font-family: "Paytone One", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navber h2 span {
+    color: #FBBC05;
+
+}
+.navber ul {
+    padding: 0;
+    margin :0;
+}
+.navber ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 30px 10px;
+} 
+.navber ul li a i {
+    border-radius: 50px;
+    background: #323232;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.footer nav .button {
+    margin-top: 20px;
+}
+.footer nav .button button {
+    padding: 20px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    background: #FBBC05;
+    transition: 0.20s;
+}
+.footer nav .button button:hover {
+    border: 1px solid #FBBC05;
+    background: #FFFFFF;
+    color: #FBBC05;
+}
+.p-area p{
+    font-size: 20px;
+}
+.p-area .current a{
+    background:  #FBBC05;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    border-radius: 25px;
+}
+.last-area {
+    padding: 20px 0;
+}
+.last-area a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    margin: 0 20px;
+}
+/*******************************responsive************************************/
+
+
+@media screen and (max-width: 768px) {
+    .col-3, .hero-text , .hero-img, .app-img, .app-text,.nossas-text , .nossas-img , .col-1 , .col-2 {
+        width: 100%;
+    }
+     .hero-text img , .hero-img img, .app-img img, .app-text img, .nossas-text img, .nossas-img img , .col-1 img{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .brand h2  {
+        font-size: 2.9rem;
+    }
+    .button button {
+    font-size: 16px;
+    
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+     .nav-mobile {
+         display: block;
+    }
+    .navber-area, .navber {
+        display: block;
+    }
+    button {
+        float: none;
+        width: 100%;
+    }
+     nav {
+         width: 100%;
+         padding: 15px 0 15px;
+         display: block;
+    }
+     nav ul {
+         display: none;
+         background: #FBBC05;
+         padding: 10px 0;
+         width: 100%;
+         float: none;
+    }
+    nav ul li {
+        float: none;
+        width: 100%;
+    }
+     nav ul li a {
+         padding: 15px;
+         line-height: 20px;
+         color: #FFFFFF;
+    }
+    nav ul li a:hover {
+        color: #000000;
+    }
+    .footer .navber ul{
+        display: block;
+    }
+    
+}
+ @media screen and (min-width:1000px) {
+     .nav-list {
+         display: block !important;
+    }
+}
+@media screen and (max-width: 450px) {
+    
+}
